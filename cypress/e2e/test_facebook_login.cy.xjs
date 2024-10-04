@@ -1,0 +1,13 @@
+import { login, loginFailed } from '../utils/facebook_page.js'
+
+describe('Validate login', () => {
+
+    before(() => {
+        cy.visit('https://en-gb.facebook.com/.')
+    })
+    
+    it('Login fails', () => {
+        login('asdjhfkajdjnjjah82380jdjlaf@mmmm.biz', '...')
+        loginFailed()
+    })
+})

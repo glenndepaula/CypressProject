@@ -1,0 +1,14 @@
+import { signup } from '../utils/facebook_page.js'
+
+describe('Validate Sign Up', () => {
+
+    before(() => {
+        cy.visit('https://en-gb.facebook.com/.')
+    })
+    
+    it('Can input sign up details', () => {
+        signup('Uvuvuwuvuwuv', 'Kurukukuku',
+            new Date("1989-12-25"),
+            'njduhjgfqwry.sdfasd@hmmmmm.biz', '...')
+    })
+})
