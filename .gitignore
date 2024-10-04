@@ -1,3 +1,4 @@
 node_modules
-screenshots
-reports
+cypress/screenshots
+cypress/reports
+cypress/downloads
